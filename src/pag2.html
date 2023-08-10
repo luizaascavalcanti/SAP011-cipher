@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="cipher.js"></script>
     <title>Cifra de Cesar</title>
 </head>
 <body>
@@ -12,10 +13,11 @@
             <div class="rocket">
                 <img src="https://cdn.pixabay.com/photo/2014/04/02/10/21/spacecraft-303592_960_720.png">
             </div>
-            <div class="app">
-              <h1> Bem vindos ao centro de comunicação da galáxia!</h1>
-              <button ><a href="pag1.html">Começar</a></button>
-            </div>
+            <div id="app">
+              <textarea id="input" placeholder="Digite o texto aqui"></textarea>
+              <button id="encode" >Cifrar</button>
+              <button id="decode" >Decifrar</button>
+              <textarea id="result" placeholder="O resultado aparecerá aqui"></textarea>
         </div>
         <script>
             function stars(){
@@ -39,5 +41,7 @@
             }
             stars();
         </script>
+</div>
+<script src="index.js" type="module" ></script>
 </body>
 </html>
